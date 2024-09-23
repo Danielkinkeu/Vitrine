@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
-import { Projet1Component } from './components/projet1/projet1.component';
-import { Projet2Component } from './components/projet2/projet2.component';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    RouterOutlet,
     MenuComponent,
-    Projet1Component,
-    Projet2Component,
-    HomeComponent
+    HomeComponent,
+    PresentationComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
